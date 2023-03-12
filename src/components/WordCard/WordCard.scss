@@ -1,100 +1,77 @@
 .slider {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .slider__btn {
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    border: none;
-    cursor: pointer;
-    transition: 0.4s;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: none;
+  cursor: pointer;
+  transition: 0.4s;
 
-    &:hover {
-        transform: scale(1.02);
-    }
-}
-
-.sliderPrev {
-    background: url('./prev.png')0 0 /100% no-repeat;
-    margin-left: 33%;
-
-    &:hover {
-        background: url('./prevHover.png')0 0 /100% no-repeat;
-    }
-}
-
-.sliderNext {
-    background: url('./next.png')0 0 /100% no-repeat;
-    margin-right: 33%;
-
-    &:hover {
-        background: url('./nextHover.png')0 0 /100% no-repeat;
-    }
+  &:hover {
+    transform: scale(1.02);
+  }
 }
 
 .card-box {
+  margin: 2em auto;
+  border-radius: 3px;
+  padding: 2%;
+  width: 15%;
+  height: 14em;
+  background-color: #af2896;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  h2 {
+    color: #d8d8d8;
+    font-size: 35px;
+  }
+
+  button {
+    cursor: pointer;
     margin: 2em auto;
+    padding: 1em;
+    color: #f3f3f3;
     border-radius: 3px;
-    padding: 2%;
-    width: 15%;
-    height: 14em;
-    background-color: #AF2896;
+    font-size: 17px;
     font-weight: 600;
-    text-transform: uppercase;
+    text-transform: lowercase;
+    border: 2px solid #eebb5d;
+    cursor: pointer;
+    box-shadow: -1px 5px 5px 3px rgba(0, 0, 0, 0.1);
 
-
-    h2 {
-        color: #d8d8d8;
-        font-size: 35px;
+    &:hover {
+      box-shadow: -1px 5px 5px 3px rgba(0, 0, 0, 0.15);
     }
+  }
 
-    button {
-        cursor: pointer;
-        margin: 2em auto;
-        padding: 1em;
-        color: #f3f3f3;
-        border-radius: 3px;
-        font-size: 17px;
-        font-weight: 600;
-        text-transform: lowercase;
-        border: 2px solid #eebb5d;
-        cursor: pointer;
-        box-shadow: -1px 5px 5px 3px rgba(0, 0, 0, 0.1);
-
-        &:hover {
-            box-shadow: -1px 5px 5px 3px rgba(0, 0, 0, 0.15);
-        }
-    }
-
-    .card-box__btn {
-        background-color: #eebb5d;
-        width: 70%;
-        transition: background-color 0.3s linear;
-    }
-
+  .card-box__btn {
+    background-color: #eebb5d;
+    width: 70%;
+    transition: background-color 0.3s linear;
+  }
 }
 
 .card-box__translate {
-    transition: 0.8s;
-    width: 70%;
-    background-color: #AF2896;
-
+  transition: 0.8s;
+  width: 70%;
+  background-color: #af2896;
 }
 
 .card-box__text {
-    color: #d8d8d8;
-    margin-top: 1em;
-    text-align: center;
+  color: #d8d8d8;
+  margin-top: 1em;
+  text-align: center;
 }
 
 .card-box__transcription {
-    color: #e3b4da;
-    padding: 1%;
-    font-size: smaller;
-    font-weight: 500;
-
+  color: #e3b4da;
+  padding: 1%;
+  font-size: smaller;
+  font-weight: 500;
 }

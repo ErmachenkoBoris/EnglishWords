@@ -1,14 +1,13 @@
-import './Header.scss';
-import logo from "./grid.png"
+import "./Header.scss";
+import logo from "./grid.png";
 
 function Header() {
-    return (
-        <header className="header">
-            <img src={logo} alt="logo" className="header__logo" />
-            <h1 className='header__title'>English Words</h1>
-
-        </header>
-    )
+  return (
+    <header className="header">
+      <img src={logo} alt="logo" className="header__logo" />
+      <h1 className="header__title">English Words</h1>
+    </header>
+  );
 }
 export default Header;
 
